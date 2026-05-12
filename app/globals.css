@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bordeaux: #6D071A;
+  --cream: #F4F1EA;
+  --gold: #C9A84C;
+  --dark: #1E0A0D;
+  --mid: #6B4E53;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bordeaux);
+}
+
+/* Selection color */
+::selection {
+  background: var(--bordeaux);
+  color: var(--cream);
+}
+
+/* Cursor */
+* {
+  cursor: none;
+}
+a, button {
+  cursor: none;
+}
